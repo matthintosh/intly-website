@@ -1,8 +1,8 @@
 "use client";
 import { useSearchParams } from "next/navigation";
-import { useEffect, useRef } from "react";
+import { Suspense, useEffect, useRef } from "react";
 
-export default function Auth() {
+function Auth() {
   const searchParams = useSearchParams();
   const linkRef = useRef<HTMLAnchorElement>(null);
 
@@ -18,4 +18,12 @@ export default function Auth() {
   }, [searchParams]);
 
   return <a href="" ref={linkRef}></a>;
+}
+
+export default function IntlyAuthentication() {
+  return (
+    <Suspense>
+      <Auth />
+    </Suspense>
+  );
 }
