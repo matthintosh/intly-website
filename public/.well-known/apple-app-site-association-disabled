@@ -1,0 +1,27 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "J495VBWQ7R.io.geniuscodecraft.intly"
+        ],
+        "components": [
+          {
+            "#":"",
+            "exclude":true
+          }
+        ]
+      }
+    ]
+  },
+  "activitycontinuation": {
+    "apps": [
+      "J495VBWQ7R.io.geniuscodecraft.intly"
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "J495VBWQ7R.io.geniuscodecraft.intly"
+    ]
+  }
+}
