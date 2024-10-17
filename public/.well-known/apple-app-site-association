@@ -7,7 +7,7 @@
         ],
         "components": [
           {
-            "*":"",
+            "/":"/intly/auth",
             "exclude":true
           }
         ]
