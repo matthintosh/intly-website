@@ -7,9 +7,11 @@
         ],
         "components": [
           {
-            "/":"*",
-            "exclude":true
-          }
+            "/":"/",
+            "exclude":true,
+            "comment":"Exclude domain root to match"
+          },
+          {"/":"/intly/app","comment":"Only match with intly/app to match"}
         ]
       }
     ]
