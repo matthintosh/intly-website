@@ -8,8 +8,9 @@ function Auth() {
 
   useEffect(() => {
     const tokenHash = searchParams.get("token_hash");
+    const type = searchParams.get("type");
     if (tokenHash) {
-      const url = `io.geniuscodecraft.intly://authentication/mail-verification?token_hash=${tokenHash}&type=magiclink`;
+      const url = `io.geniuscodecraft.intly://authentication/mail-verification?token_hash=${tokenHash}&type=${type}`;
       if (linkRef.current) {
         linkRef.current.href = url;
         linkRef.current.click();
